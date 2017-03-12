@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6e227c8b-d994-4c3f-b62e-45305c2933c1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8989/ztbd" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ztbd1.xsd" MetadataType="Schema" ID="6446fedf-4a27-4a96-9d88-703e69fef3e2" SourceId="1" SourceUrl="http://localhost:8989/ztbd?xsd=xsd2" />
+    <MetadataFile FileName="ztbd.disco" MetadataType="Disco" ID="75ab1d8d-efe3-42ba-9f2d-b0cb25bfb011" SourceId="1" SourceUrl="http://localhost:8989/ztbd?disco" />
+    <MetadataFile FileName="ztbd11.xsd" MetadataType="Schema" ID="b54743bd-7094-4530-a89c-5fac80b014ff" SourceId="1" SourceUrl="http://localhost:8989/ztbd?xsd=xsd0" />
+    <MetadataFile FileName="ztbd12.xsd" MetadataType="Schema" ID="1ca987ef-97a9-419f-8948-23eb311c1de3" SourceId="1" SourceUrl="http://localhost:8989/ztbd?xsd=xsd1" />
+    <MetadataFile FileName="ZTBDService.wsdl" MetadataType="Wsdl" ID="830a574a-4d22-421f-a7c6-baadcc3e0c8f" SourceId="1" SourceUrl="http://localhost:8989/ztbd?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

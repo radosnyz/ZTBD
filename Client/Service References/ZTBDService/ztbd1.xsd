@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ZTBD" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ZTBD" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Data">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ComputerUsage" nillable="true" type="tns:ComputerUsage" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Temperature" nillable="true" type="tns:Temperature" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Data" nillable="true" type="tns:Data" />
+  <xs:complexType name="ComputerUsage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPU" type="xs:double" />
+      <xs:element minOccurs="0" name="RAM" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ComputerUsage" nillable="true" type="tns:ComputerUsage" />
+  <xs:complexType name="Temperature">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPU" type="xs:int" />
+      <xs:element minOccurs="0" name="GPU" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Temperature" nillable="true" type="tns:Temperature" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PcName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="ArrayOfData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Data" nillable="true" type="tns:Data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfData" nillable="true" type="tns:ArrayOfData" />
+</xs:schema>
