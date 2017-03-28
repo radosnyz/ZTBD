@@ -21,7 +21,8 @@ namespace ServiceRunner
                 {
                     // Step 3 Add a service endpoint.  
                     selfHost.AddServiceEndpoint(typeof(IZTBDService), new BasicHttpBinding(), "BasicHttpBinding_IZTBDService");
-
+                    // ServiceEndpoint endpoint = host.AddServiceEndpoint(typeof(IZTBDService), new WebHttpBinding(), "");
+                    // endpoint.Behaviors.Add(new WebHttpBehavior());
                     // Step 4 Enable metadata exchange.  
                     ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
                     smb.HttpGetEnabled = true;
